@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CauseConnect</title>
+    <link rel="stylesheet" href="stylesheets/signup.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CauseConnect</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login1.html">Login</a></li>
+                <li><a href="user.html">User</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="organizations/signup.html">Organization Signup</a></li>
+                <li><a href="organizations/login.html">Organization Login</a></li>
+                <li><a href="admin/login.html">Admin Login</a></li>
+                <li><a href="http://localhost:8080/admin/dashboard">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="signup-container">
+            <h2>Sign Up</h2>
+            <p>Welcome to CauseConnect! Please enter your details to join.</p>
+            <form action="/users/signup" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter your Location" required>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+                <div class="or-divider">OR</div>
+                <div class="google-login">
+                    <div id="g_id_onload"
+                         data-client_id="YOUR_CLIENT_ID"
+                         data-login_uri="http://localhost:8080/auth/google/callback"
+                         data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin"
+                         data-type="standard"
+                         data-shape="rectangular"
+                         data-theme="outline"
+                         data-text="sign_in_with"
+                         data-size="large"
+                         data-logo_alignment="left">
+                    </div>
+                </div>
+            </form>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </section>
+    </main>
+    <footer>
+        <section class="subscribe-section">
+            <p>Want to receive event updates?</p>
+            <input type="email" placeholder="Enter your email">
+            <button type="button">Subscribe</button>
+        </section>
+        <section class="footer-content">
+            <div class="footer-info">
+                <p>Email</p>
+                <p><a href="mailto:info@causeconnect.com">info@causeconnect.com</a></p>
+            </div>
+            <div class="footer-links">
+                <p><a href="login.html">Log In</a></p>
+                <p><a href="signup.html">Sign Up</a></p>
+                <p><a href="/">Home</a></p>
+                <p><a href="#">About us</a></p>
+                <p><a href="#">Find Events</a></p>
+                <p><a href="#">Post Event</a></p>
+                <p><a href="#">FAQs</a></p>
+            </div>
+            <div class="footer-branding">
+                <p class="footer-logo">CauseConnect</p>
+                <p>We help discover, join & engage with volunteering events in various locations of Australia.</p>
+                <div class="footer-social">
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/google-plus.png" alt="Google Plus"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/youtube-play.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </section>
+        <p>© CauseConnect 2024, All rights reserved.</p>
+    </footer>
+</body>
+</html>

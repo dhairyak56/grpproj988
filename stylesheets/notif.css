@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8e1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #3498db;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.nav-links .login {
+    color: #ff8c00;
+}
+
+.nav-links .sign-up {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Notification Form Styles */
+.notification-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f8e1c1;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.notification-container .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.notification-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.notification-container input[type="email"],
+.notification-container input[type="text"],
+.notification-container textarea {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+}
+
+.notification-container textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.send-button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+.subscribe-section {
+    margin-bottom: 30px;
+}
+
+.subscribe-section input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.subscribe-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+.subscribe-section button:hover {
+    background-color: #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-info,
+.footer-links,
+.footer-branding {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-info p,
+.footer-links p,
+.footer-branding p {
+    margin: 10px 0;
+}
+
+.footer-info a,
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-info a:hover,
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-branding .footer-logo {
+    font-size: 1.5em;
+    color: #3498db;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social a:hover img {
+    opacity: 0.7;
+}
